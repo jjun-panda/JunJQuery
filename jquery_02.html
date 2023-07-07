@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="">Naver</a></li>
+        <li><a href="">Google</a></li>
+        <li><a href="">Yahoo</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">kakao</a></li>
+    </ul>
+
+    <script>
+        // jQuery entty point
+        $(function() {
+            $('ul li a').click(function(e) {
+                e.preventDefault();
+                $(this).parent().css('backgroundColor', 'orange').hide('slow');
+            });
+        });
+    </script>
+</body>
+</html>
